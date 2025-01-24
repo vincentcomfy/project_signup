@@ -8,7 +8,15 @@
 </head>
 <body>
 <div class="contentBox">
-    <div class="leftPane"></div>
+    <div class="leftPane">
+        <div class="overlay">
+            <div class="logo"><img src="./images/odin-lined.png" alt="Lined variant of The Odin Project image"></div>
+            <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a></p>
+        </div>
+        <div class="backgroundImage">
+            <img src="./images/photo-1585202900225-6d3ac20a6962.avif" alt="background image of ferns">
+        </div>
+    </div>
     <div class="rightPane">
         <div class="rPaneTop">
             <p>
@@ -21,17 +29,18 @@
         </div>
         <div class="rPaneMid">
             <p>Let's do this!</p>
+            <fieldset>Account Creation</fieldset>
             <form action="" method="post">
                 <label for="firstName">First Name</label>
-                <input type="text" name="firstName" id="firstName" placeholder="Keanu">
+                <input type="text" name="firstName" id="firstName" placeholder="Keanu" required>
             </form>
             <form action="" method="post">
                 <label for="lastName">Last Name</label>
-                <input type="text" name="lastName" id="lastName" placeholder="Reeves">
+                <input type="text" name="lastName" id="lastName" placeholder="Reeves" required>
             </form>
             <form action="" method="post">
                 <label for="email">Email Address</label>
-                <input type="email" name="emailAddr" id="emailAddr" placeholder="keanu.reeves@archmc.com">
+                <input type="email" name="emailAddr" id="emailAddr" placeholder="keanu.reeves@archmc.com" required>
             </form>
             <form action="" method="post">
                 <label for="phone">Phone Number</label>
@@ -39,16 +48,16 @@
             </form>
             <form action="" method="post">
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" required>
             </form>
             <form action="" method="post">
                 <label for="confPassword">Confirm Password</label>
-                <input type="password" name="confPassword" id="confPassword">
+                <input type="password" name="confPassword" id="confPassword" required>
             </form>
         </div>
         <div class="rPaneBtm">
-            <button type="button">Create Account</button>
-            <p>Already have an account? <link rel="" href="">Log in</p>
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
         </div>
     </div>
 </div>
