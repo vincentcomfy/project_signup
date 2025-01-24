@@ -7,18 +7,48 @@
     <title>Project: Sign-up Form</title>
 </head>
 <body>
-    <div class="contentContainer">
-        <div id="bgImage"><img src="./images/photo-1585202900225-6d3ac20a6962.avif" alt="Moist Fern leaves in a forest"></div>
-        <div class="leftBar">
-            <div class="odinLogo"><img src="./images/odin-lined.png" alt="The Odin Project Logo"></div>
-            <div class="creditText"><p>Photo by Hallie West on Unsplash</p></div>
+<div class="contentBox">
+    <div class="leftPane"></div>
+    <div class="rightPane">
+        <div class="rPaneTop">
+            <p>
+                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                Sign up <em>now</em> to get started.
+            </p>
+            <p>
+                You <em>know</em> you want to.
+            </p>
         </div>
-        <div class="mainContent">
-            <div class="topText"></div>
-            <div class="callToAction"></div>
-            <div class="bottomText"></div>
+        <div class="rPaneMid">
+            <p>Let's do this!</p>
+            <form action="" method="post">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Keanu">
+            </form>
+            <form action="" method="post">
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Reeves">
+            </form>
+            <form action="" method="post">
+                <label for="email">Email Address</label>
+                <input type="email" name="emailAddr" id="emailAddr" placeholder="keanu.reeves@archmc.com">
+            </form>
+            <form action="" method="post">
+                <label for="phone">Phone Number</label>
+                <input type="text" name="phoneNum" id="phoneNum" placeholder="1234 567 8910">
+            </form>
+            <form action="" method="post">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </form>
+            <form action="" method="post">
+                <label for="confPassword">Confirm Password</label>
+                <input type="confPassword" name="confPassword" id="confPassword">
+            </form>
         </div>
+        <div class="rPaneBtm"></div>
     </div>
+</div>
 
     <script src="./script.js"></script>
 </body>
