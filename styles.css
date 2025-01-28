@@ -122,17 +122,17 @@ body {
     margin-bottom: 40px; /* Margin below login text */
 }
 
-/* Ensuring full width and shadow only on top/bottom */
 .formContainer {
     background: white;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Drop shadow for form container */
-    width: 100%; /* Full width for the form container */
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding: 0px;
+    width: 100%; /* Ensure form container takes up the full width of its parent container */
+    margin: 0; /* Remove margins to ensure no gap */
     border-radius: 0; /* Removed the border radius */
     box-sizing: border-box; /* Prevents overflow */
+    /* box-shadow removed */
 }
+
+
 
 form p {
     font-size: 1.5rem;
