@@ -11,7 +11,7 @@ body {
 
 .contentBox {
     display: flex;
-    max-width: 1000px;
+    max-width: 1200px; /* Increased width */
     width: 100%;
     height: auto;
     background: white;
@@ -21,12 +21,21 @@ body {
 }
 
 .leftPane {
-    flex: 3;
+    flex: 4; /* 40% width */
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-end; /* Ensures credits are at the bottom */
     overflow: hidden;
+}
+
+.rightPane {
+    flex: 6; /* 60% width */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative; /* Ensure positioning context for container */
 }
 
 .backgroundImage {
@@ -84,26 +93,50 @@ body {
     z-index: 1;
 }
 
-.rightPane {
-    flex: 7;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.rPaneTop {
+    margin-top: 50px; /* Margin to push content down */
 }
 
-.rPaneTop,
-.rPaneMid,
-.rPaneBtm {
+.rPaneMid {
     margin-bottom: 20px;
 }
 
-fieldset {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
+.rPaneBtm {
+    margin-top: 20px;
+    margin-bottom: 40px; /* Margin below login text */
 }
 
+/* Ensuring full width and shadow only on top/bottom */
+.formContainer {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Drop shadow for form container */
+    border-radius: 8px;
+    width: 100%; /* Full width for the form container */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Correcting the columns and rows for fields */
+.inputWrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allows the inputs to wrap into new rows */
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.inputWrapper label,
+.inputWrapper input {
+    width: 48%; /* Ensures two inputs per row with a small gap */
+    box-sizing: border-box; /* Ensure padding and borders don't affect width calculation */
+}
+
+/* Improved form styling */
 form label {
     display: block;
     font-size: 0.9rem;
@@ -111,11 +144,10 @@ form label {
 }
 
 form input {
-    width: 100%;
     padding: 8px;
-    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 button {
